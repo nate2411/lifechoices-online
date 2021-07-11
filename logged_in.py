@@ -15,7 +15,7 @@ def sign_out():
 
     if sign_out == "yes":
 
-        visitor = select_from_table("SELECT * FROM visitor WHERE logged_in = 'true' AND time_out = 'false'")[0]
+        visitor = select_from_table("SELECT * FROM visitor ")[0]
         ("UPDATE visitor SET logged_in " + str(visitor[0]))
         window.destroy()
         import sign_in
