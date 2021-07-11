@@ -66,11 +66,11 @@ def edit_visitor():
                 if not user_exists(name, id_number):
 
                     query = "UPDATE visitor SET name = '" + name + "', surname = '" + surname + "', id_number = '" + id_number + "', phone_number = '" + phone_number + "' WHERE id = " + visitor_id
-                    update_table(query)
+                    (query)
 
 
                     nok_query = "UPDATE next_of_kin SET name = '" + nok_name + "', phone_number = '" + nok_phone_number + "' WHERE visitor_id = " + visitor_id
-                    update_table(nok_query)
+                    (nok_query)
 
                     populate_treeview()
 
@@ -183,11 +183,11 @@ def edit_visitor():
                 if not user_exists(name, id_number):
 
                     query = "UPDATE visitors SET name = '" + name + "', surname = '" + surname + "', id_number = '" + id_number + "', phone_number = '" + phone_number + "' WHERE id = " + visitor_id
-                    update_table(query)
+                    (query)
 
 
                     nok_query = "UPDATE next_of_kin SET name = '" + nok_name + "', phone_number = '" + nok_phone_number + "' WHERE visitor_id = " + visitor_id
-                    update_table(nok_query)
+                    (nok_query)
 
                     populate_treeview()
 
